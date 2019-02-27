@@ -4,13 +4,36 @@
   <meta charset="utf-8" />
   <title>twittler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Righteous" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="data.js"></script>
 </head>
 <body>
-  <!-- 여기에 HTML 구조를 작성하세요. 아래 코드는 예제이며, 얼마든지 바꿀 수 있습니다 -->
-  <div id="greeting">twittler</div>
-  <div id="test"></div>
+  
+  <div class="logo">
+    <h6>tweettler</h6>
+  </div>
+  <section id="main">
+      <div class="container main-container">
+        <div class="input-container">
+          <textarea name="input" class="input-box" id="user-input" required></textarea>
+          <input type="text" id="user-name" placeholder="who?" required><!--
+          --><h3>is the</h3><!--  
+          --><button name="send" id="send" class="btn">hottest now!</button> 
+        </div>
+      </div>
+      <div class="interface container" id="refreshcase">
+        <button name="check-new-tweet" id="refresh-btn" class="refresh">Check new tweets!</button>
+      </div>
+      <div class="interface container" id="clearcase">
+        <button name="clear-all-chat" id="clear-btn" class="clear">Clear all tweets!</button>
+      </div>
+      <div class="interface container" id="returncase">
+          <button name="return-to-main" id="return-btn" class="return">Return to Main!</button>
+      </div>
+      <div id="chatset"></div>
+  </section>
+  
 
   <script src="script.js"></script>
 </body>
