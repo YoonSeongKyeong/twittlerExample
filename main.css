@@ -1,13 +1,225 @@
-#greeting {
-  font-size: 2em;
-  font-family: sans-serif;
-  font-weight: bold;
-  border: 2px solid #ccc;
-  border-radius: 1em;
-  color: white;
-  background-color: #eee;
-  text-shadow: 0 0 5px #333;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset finished */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+ 
+.cf:after {
+    clear: both;
+}
+/*clearfix*/
+
+body{
+  background: url("https://chargervoice.com/wp-content/uploads/2018/09/maxresdefault.jpg") bottom center no-repeat , linear-gradient(to bottom, #180838 0%, #000000f5 100%);
+  background-position: center top;
+  background-size: cover, cover;
+}
+
+.logo{
+  width:40%;
+  height: 20%;
+  margin:40px auto 0px auto;
+  border:8px solid rgba(163, 85, 71, 0.966);
+  background-color: rgba(245, 214, 75, 0.966);
+  border-radius: 15px;
+}
+
+.logo h6 {
+  text-transform: capitalize;
   text-align: center;
-  margin: 0.5em;
-  padding: 0.5em;
+  font-size:  700%;
+  font-family: 'Righteous';
+  color: brown;
+}
+.container{
+  display: border-box;
+  width:40%;
+  margin: 0 auto; 
+}
+.main-container {
+  padding: 8px 10px 5px 10px;
+  border-radius: 2em;
+  border: 8px solid rgb(255, 0, 0);
+  background: rgb(207, 162, 63);
+}
+.input-container {
+  display: border-box;
+  width:90%;
+  margin: 1% auto; 
+}
+.input-box {
+  color: black;
+  font: 700 26px/100% 'Righteous';
+  width:96%;
+  height: 4.5em;
+  border: 6px dashed rgb(196, 6, 6);
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+}
+::placeholder{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+#user-name {
+  font: 700 30px/100% 'Acme';
+  color:rgb(255, 251, 0);
+  display: inline-block;
+  width: 37%;
+  border: 4px dashed rgb(255, 0, 0);
+  margin-right: 1%;
+  padding-left: 3%;
+  background-color: brown;
+  text-align: center;
+}
+#user-name:hover{
+  background-color: rgb(17, 17, 49);
+  color: white;
+}
+.input-container h3{
+  font: 700 30px/150% 'Acme';
+  color: brown;
+  display: inline-block;
+}
+.btn {
+  color: rgb(235, 232, 60);
+  font: 700 30px/150% 'Acme';
+  display: inline-block;
+  width: 42%;
+  margin-left: 1%;
+  background: brown;
+  border: 4px dashed rgb(255, 0, 0);
+}
+.btn:hover{
+  background-color: rgb(17, 17, 49);
+  color: white;
+}
+.refresh {
+  width:100%;
+  background-color: rgb(8, 112, 48);
+  border: 8px solid rgb(118, 192, 20);
+  font: 300 40px/150% 'Righteous';
+  color: rgb(125, 214, 65);
+  border-radius: 0.8em;
+}
+.refresh:hover{
+  background-color: rgb(255, 238, 5);
+  color: rgb(255, 255, 255);
+}
+.clear {
+  width:100%;
+  background-color: rgb(0, 0, 0);
+  border: 8px solid rgb(17, 51, 73);
+  font: 300 40px/150% 'Righteous';
+  color: rgb(208, 255, 98);
+  border-radius: 0.8em;
+}
+.clear:hover{
+  background-color: rgb(255, 238, 5);
+  color: rgb(255, 0, 0);
+}
+.return {
+  width:100%;
+  background-color: rgb(92, 180, 19);
+  border: 8px solid rgb(122, 209, 142);
+  font: 300 40px/150% 'Righteous';
+  color: rgb(255, 226, 62);
+  border-radius: 0.8em;
+}
+.return:hover{
+  background-color: rgb(255, 238, 5);
+  color: rgb(11, 71, 61);
+}
+.tweetbox {
+  display: border-box;
+  border: 10px solid rgb(235, 33, 33);
+  border-radius: 20px;
+  padding: 1em 2pt;
+  background: rgb(0, 0, 0);
+}
+.tweetbox:nth-child(5n+1){
+  border: 10px solid rgb(20, 157, 248);
+}
+.tweetbox:nth-child(5n+2){
+  border: 10px solid rgb(28, 202, 150);
+}
+.tweetbox:nth-child(5n+3){
+  border: 10px solid rgb(204, 168, 9);
+}
+.tweetbox:nth-child(5n+4){
+  border: 10px solid rgb(111, 84, 218);
+}
+.tweetbox:first-child{
+  border: 10px solid rgb(217, 255, 0);
+}
+.owner{
+  display: inline-block;
+  margin-left: 5pt;
+  margin-bottom: 3px;
+  font: 300 20px/100% 'Righteous';
+  color: rgb(233, 177, 22);
+}
+.owner:hover{
+  color:yellow;
+}
+.time{
+  font: 300 20px/100% 'Righteous';
+  color: skyblue;
+  float: right;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+.tweet{
+  margin: 0 10px;
+  font: 300 20px/100% 'Righteous';
+  color: white;
 }
