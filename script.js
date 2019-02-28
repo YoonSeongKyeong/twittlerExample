@@ -56,16 +56,16 @@ var makeDateUserFriendly = function(dateIn) {//가까운시간을 ~ ago 방식�
         return 'a day ago';
     }
     else if(timeGone>120){
-        return (timeGone/60)+'hours ago';
+        return parseInt(timeGone/60)+'hours ago';
     }
     else if(timeGone>60){
         return 'an hour ago';
     }
     else if(timeGone>20){
-        return (timeGone/10)+'0 minutes ago';
+        return parseInt(timeGone/10)+'0 minutes ago';
     }
     else if(timeGone>2) {
-        return (timeGone) + 'minutes ago';
+        return parseInt(timeGone) + 'minutes ago';
     }
     else{
         return 'now';
